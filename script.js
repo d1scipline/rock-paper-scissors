@@ -3,7 +3,7 @@ function getComputerChoice () {
     return choice;
 }
 
-function getUserChoice () {
+function getHumanChoice () {
     let choice = prompt("What's your choice: ");
     choice = choice.toLowerCase();
     if (choice == "rock") {
@@ -17,5 +17,42 @@ function getUserChoice () {
     }
     else {
         return 0;
+    }
+}
+
+let humanScore = 0;
+let computerScore = 0;
+
+
+function playRound (computerChoice, humanChoice) {
+    if (humanChoice == 0) {
+        console.log("Invalid option. Please enter one of the following: rock, paper, scissors.");
+    }
+    else if (computerChoice == humanChoice) {
+        console.log("It's a tie!");
+    }
+    else if (humanChoice == 1 && computerChoice == 3) {
+        console.log("You win! Rock beats Scissors.");
+        humanScore += 1;
+    }
+    else if (humanChoice == 3 && computerChoice == 1) {
+        console.log("You lose! Scissors beat Rock!");
+        computerScore += 1;
+    }
+    else if (humanChoice == 1 && computerChoice == 2) {
+        console.log("You lose! Paper beats Rock.");
+        computerChoice += 1;
+    }
+    else if (humanChoice == 2 && computerChoice == 1) {
+        console.log("You win! Paper beats Rock.");
+        humanScore += 1;
+    }
+    else if (humanChoice == 2 && computerChoice == 3) {
+        console.log("You lose! Scissors beat Rock!");
+        computerScore += 1;
+    }
+    else if (humanChoice == 3 && computerChoice == 2) {
+        console.log("You win! Scissors beat Rock!");
+        humanScore += 1;
     }
 }
