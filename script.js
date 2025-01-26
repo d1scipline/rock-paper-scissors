@@ -39,7 +39,7 @@ function playGame (event) {
             humanScore += 1;
         }
         else if (humanChoice == 3 && computerChoice == 1) {
-            results.textContent = "You lose! Scissors beat Rock!";
+            results.textContent = "You lose! Rock beats Scissors!";
             computerScore += 1;
         }
         else if (humanChoice == 1 && computerChoice == 2) {
@@ -51,11 +51,11 @@ function playGame (event) {
             humanScore += 1;
         }
         else if (humanChoice == 2 && computerChoice == 3) {
-            results.textContent = "You lose! Scissors beat Rock!";
+            results.textContent = "You lose! Scissors beat Paper!";
             computerScore += 1;
         }
         else if (humanChoice == 3 && computerChoice == 2) {
-            results.textContent = "You win! Scissors beat Rock!";
+            results.textContent = "You win! Scissors beat Paper!";
             humanScore += 1;
         }
         scores.textContent = "Your score: " + humanScore + " | " + "Computer Score: " + computerScore;
