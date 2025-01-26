@@ -6,6 +6,16 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <div class="game" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <div class="header" style="font-family: sans-serif; font-size: large;">ROCK - PAPER - SCISSORS</div>
+        <div class="human-chocies">
+            <button class="rock"><img class="rock" src="https://icons.iconarchive.com/icons/microsoft/fluentui-emoji-flat/512/Rock-Flat-icon.png" height="100px" width="100px"></button>
+            <button class="paper"><img class="paper" src="https://cdn-icons-png.flaticon.com/512/2541/2541988.png" width="100px" height="100px"></button>
+            <button class="scissors"><img class="scissors" src="https://cdn-icons-png.flaticon.com/512/10363/10363577.png" width="100px" height="100px"></button>
+        </div>
+        <div class="results" style="margin: 1em"></div>
+        <p class="scores"></p>
+    </div>
 </body>
 </html>
